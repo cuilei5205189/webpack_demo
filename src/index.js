@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.sass';
 import Icon from './icon.png';
+import axios from "axios";
 
 function component() {
     let elements = document.createElement('div');
@@ -31,3 +32,7 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+console.log(axios);
+
+axios.get('/book')
